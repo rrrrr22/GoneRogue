@@ -7,7 +7,7 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
 endif()
 
 project(
-    libtcod-vcpkg-template  # Project name, change this as needed.
+    gone-rogue  # Project name, change this as needed.
     LANGUAGES C CXX
 )
 
@@ -60,7 +60,6 @@ FetchContent_MakeAvailable(flecs)
 find_package(SDL3 CONFIG REQUIRED)
 find_package(libtcod CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
-find_package(flecs CONFIG REQUIRED)
 
 target_link_libraries(
     ${PROJECT_NAME}
@@ -68,5 +67,4 @@ target_link_libraries(
         SDL3::SDL3
         libtcod::libtcod
         fmt::fmt
-        flecs::flecs_static
 )
