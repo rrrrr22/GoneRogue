@@ -49,9 +49,11 @@ endif()
 
 find_package(SDL3 CONFIG REQUIRED)
 find_package(libtcod CONFIG REQUIRED)
+find_package(fmt CONFIG REQUIRED)
 target_link_libraries(
     ${PROJECT_NAME}
     PRIVATE
         SDL3::SDL3
         libtcod::libtcod
+        fmt::fmt
 )
