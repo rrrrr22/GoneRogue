@@ -9,7 +9,7 @@ defaults:
     shell: bash
 
 env:
-  project-name: libtcod-vcpkg-template
+  project-name: gone-rogue
   # Build mode for CMake, such as "Release", "Debug", "RelWithDebInfo", or "MinSizeRel"
   BUILD_TYPE: Release
   # Indicates the location of the vcpkg as a Git submodule of the project repository.
