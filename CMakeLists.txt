@@ -47,19 +47,9 @@ if (EMSCRIPTEN)
     )
 endif()
 
-include(FetchContent)
-
-FetchContent_Declare(
-    flecs
-    GIT_REPOSITORY https://github.com/SanderMertens/flecs.git
-    GIT_TAG master
-)
-
-FetchContent_MakeAvailable(flecs)
-
 find_package(SDL3 CONFIG REQUIRED)
 find_package(libtcod CONFIG REQUIRED)
-find_package(fmt CONFIG REQUIRED)
+find_package(fmt)
 
 target_link_libraries(
     ${PROJECT_NAME}
